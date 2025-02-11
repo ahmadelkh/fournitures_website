@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/fournitures_website/static/css/main.6c8e7419.css",
+    "main.css": "/fournitures_website/static/css/main.4ac5a2e3.css",
     "main.js": "/fournitures_website/static/js/main.975e96a5.js",
     "static/css/994.f497055c.chunk.css": "/fournitures_website/static/css/994.f497055c.chunk.css",
     "static/js/994.d75946d6.chunk.js": "/fournitures_website/static/js/994.d75946d6.chunk.js",
@@ -20,7 +20,7 @@
     "static/media/city.webp": "/fournitures_website/static/media/city.0eff957c8e3e05cbbe83.webp",
     "static/media/about-bg.jpeg": "/fournitures_website/static/media/about-bg.9b27f92bacf47c592aed.jpeg",
     "index.html": "/fournitures_website/index.html",
-    "main.6c8e7419.css.map": "/fournitures_website/static/css/main.6c8e7419.css.map",
+    "main.4ac5a2e3.css.map": "/fournitures_website/static/css/main.4ac5a2e3.css.map",
     "main.975e96a5.js.map": "/fournitures_website/static/js/main.975e96a5.js.map",
     "994.f497055c.chunk.css.map": "/fournitures_website/static/css/994.f497055c.chunk.css.map",
     "994.d75946d6.chunk.js.map": "/fournitures_website/static/js/994.d75946d6.chunk.js.map",
@@ -38,7 +38,7 @@
     "351.38e46251.chunk.js.map": "/fournitures_website/static/js/351.38e46251.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6c8e7419.css",
+    "static/css/main.4ac5a2e3.css",
     "static/js/main.975e96a5.js"
   ]
 }
