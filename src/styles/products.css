@@ -45,9 +45,10 @@
 
 /* ✅ Slider Container */
 .slider-container {
-  position: relative;
   display: flex;
-  align-items: center;
+  flex-wrap: wrap; /* ✅ Allow multiple rows */
+  justify-content: center;
+  align-items: flex-start;
   overflow: hidden;
   padding: 10px 0;
 }
@@ -55,11 +56,12 @@
 /* ✅ Auto-Scrolling Product Slider */
 .products-slider {
   display: flex;
+  flex-wrap: wrap; /* ✅ Allows multiple rows */
   gap: 10px;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
+  justify-content: center;
+  align-items: flex-start;
+  overflow-x: hidden; /* ✅ Remove horizontal scrolling */
+  padding: 10px;
 }
 
 .products-slider::-webkit-scrollbar {
