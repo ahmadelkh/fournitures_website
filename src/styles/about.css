@@ -1,0 +1,175 @@
+/* ✅ ABOUT SECTION */
+.about-section {
+  position: relative;
+  padding: 100px 10%;
+  background: linear-gradient(to bottom, #111, #222);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* ✅ Gradient Overlay */
+.about-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+  z-index: 0;
+}
+
+/* ✅ About Section Content */
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  position: relative;
+  z-index: 1;
+}
+
+/* ✅ Text Section */
+.about-text-container {
+  flex: 1;
+  max-width: 600px;
+  text-align: left;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.about-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffcc00;
+  text-shadow: 0 0 15px rgba(255, 204, 0, 0.6);
+  margin-bottom: 20px;
+}
+
+.about-text {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.about-text span {
+  font-weight: bold;
+  color: #ffcc00;
+}
+
+/* ✅ Buttons */
+.about-buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.about-btn {
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: #ffcc00;
+  color: black;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 0 15px rgba(255, 204, 0, 0.8);
+}
+
+.about-btn:hover {
+  background: white;
+  color: black;
+}
+
+.about-btn.secondary {
+  background: transparent;
+  border: 2px solid #ffcc00;
+  color: #ffcc00;
+}
+
+.about-btn.secondary:hover {
+  background: #ffcc00;
+  color: black;
+}
+
+/* ✅ Image Section */
+.about-image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.about-image {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 15px;
+  box-shadow: 0 0 25px rgba(255, 204, 0, 0.8);
+  transition: 0.5s ease-in-out;
+}
+
+.about-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px rgba(255, 204, 0, 1);
+}
+
+/* ✅ Fade In Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ✅ Responsive Adjustments */
+@media (max-width: 1024px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text-container {
+    max-width: 100%;
+  }
+
+  .about-image {
+    max-width: 80%;
+  }
+
+  .about-buttons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-title {
+    font-size: 2rem;
+  }
+
+  .about-text {
+    font-size: 1rem;
+  }
+
+  .about-btn {
+    font-size: 0.9rem;
+    padding: 10px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-title {
+    font-size: 1.8rem;
+  }
+
+  .about-text {
+    font-size: 0.9rem;
+  }
+
+  .about-btn {
+    font-size: 0.8rem;
+    padding: 8px 12px;
+  }
+}

@@ -1,0 +1,188 @@
+/* ✅ Navbar Container */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between; /* ✅ Space out title & buttons */
+  align-items: center;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 0 5%;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+  border-bottom: 2px solid rgba(255, 204, 0, 0.6);
+  box-shadow: 0 0 15px rgba(255, 204, 0, 0.5);
+}
+
+/* ✅ Navbar Title */
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffcc00;
+  text-shadow: 0px 0px 10px rgba(255, 204, 0, 0.8);
+  transition: 0.3s ease-in-out;
+  animation: glowTitle 1.5s infinite alternate;
+  cursor: pointer;
+}
+
+@keyframes glowTitle {
+  0% { text-shadow: 0px 0px 10px rgba(255, 204, 0, 0.6); }
+  100% { text-shadow: 0px 0px 20px rgba(255, 204, 0, 1); }
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+/* ✅ Navbar Links */
+.nav-links {
+  display: flex;
+  justify-content: center; /* ✅ Centering buttons */
+  align-items: center;
+  gap: 30px;
+  flex-grow: 1; /* ✅ Make sure buttons take full width */
+}
+
+/* ✅ Navbar Buttons */
+.nav-links a {
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap; /* ✅ Prevents text from breaking */
+}
+
+/* ✅ Hover Effects */
+.nav-links a:hover {
+  background: #ffcc00;
+  color: black;
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(255, 204, 0, 1);
+}
+
+/* ✅ Animated Underline */
+.nav-links a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background: #ffcc00;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%) scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-links a:hover::before {
+  transform: translateX(-50%) scaleX(1);
+}
+
+/* ✅ Mobile Menu Toggle */
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 1024px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 5%;
+  }
+
+  .logo {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .nav-links {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .nav-links a {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    display: none;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block; /* ✅ Make button visible */
+    position: absolute;
+    right: 5%;
+    background: rgba(255, 204, 0, 0.9);
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+
+  .menu-toggle:hover {
+    background: white;
+    color: black;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    display: none;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links a {
+    font-size: 0.85rem;
+    padding: 6px 10px;
+  }
+}
