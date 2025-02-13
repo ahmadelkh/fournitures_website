@@ -58,12 +58,18 @@
   gap: 10px;
   overflow-x: auto;
   scroll-behavior: smooth;
-  scrollbar-width: none;
+  scrollbar-width: thin; /* ✅ Show a thin scrollbar */
   -ms-overflow-style: none;
+  white-space: nowrap; /* ✅ Ensures items stay in a row */
+  padding: 10px;
 }
 
 .products-slider::-webkit-scrollbar {
-  display: none;
+  height: 6px;
+}
+.products-slider::-webkit-scrollbar-thumb {
+  background: rgba(255, 204, 0, 0.8);
+  border-radius: 10px;
 }
 
 /* ✅ Scroll Buttons */
@@ -95,7 +101,7 @@
 
 /* ✅ Product Card */
 .product-card {
-  flex: 0 0 calc(33.33% - 10px); /* ✅ Ensures 3 per row on all screens */
+  flex: 0 0 calc(33.33% - 10px); /* ✅ Keeps 3 per row */
   max-width: calc(33.33% - 10px);
   background: rgba(255, 255, 255, 0.1);
   padding: 10px;
@@ -103,8 +109,9 @@
   text-align: center;
   transition: 0.3s ease-in-out;
   box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
-  height: 230px;
+  height: auto; /* ✅ Allow content to expand */
   margin: 0 5px;
+  white-space: normal; /* ✅ Prevents text overflow */
 }
 
 /* ✅ Image Styling */
@@ -177,8 +184,9 @@
 
 @media (max-width: 768px) {
   .product-card {
-    flex: 0 0 calc(33.33% - 10px); /* ✅ Force 3 per row */
-    max-width: calc(33.33% - 10px);
+    flex: 0 0 90%; /* ✅ Show one product per row */
+    max-width: 90%;
+    scroll-snap-align: center;
   }
 
   .product-image {
@@ -188,6 +196,11 @@
   .scroll-btn {
     font-size: 1.5rem;
     padding: 6px;
+  }
+
+  .products-slider {
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory; /* ✅ Makes scrolling feel smoother */
   }
 }
 
