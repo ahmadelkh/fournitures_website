@@ -3,7 +3,7 @@ import { db } from "../firebaseConfig";
 import { doc, getDoc } from "firebase/firestore";
 import "../styles/products.css";
 
-const categories = ["salons", "accessories", "chairs", "lamps"];
+const categories = ["salons", "accessories", "chaises", "chaises_bureau", "lamps"];
 
 const Products = () => {
   const [selectedCategory, setSelectedCategory] = useState("salons");
