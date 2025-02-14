@@ -1,309 +1,141 @@
-/* ✅ General Section Styling */
 .products-section {
   text-align: center;
-  padding: 50px 5%;
-  background: linear-gradient(to right, #111, #222);
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #1e1e1e, #2c2c2c);
   color: white;
 }
 
-/* ✅ Title */
 .products-title {
   font-size: 2.5rem;
   font-weight: bold;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
-/* ✅ Category Buttons */
 .category-buttons {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
-.category-buttons button {
-  padding: 8px 12px;
-  background: #222;
+.category-btn {
+  background: transparent;
+  border: 2px solid #fff;
+  padding: 10px 15px;
   color: white;
-  border: 1px solid white;
-  font-size: 0.9rem;
+  margin: 5px;
   cursor: pointer;
-  transition: 0.3s;
-  margin: 0 5px;
-  border-radius: 5px;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
 }
 
-.category-buttons button.active {
-  background: #ffcc00;
-  color: black;
-  font-weight: bold;
+.category-btn.active {
+  background: #fff;
+  color: #1e1e1e;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
 }
 
-.category-buttons button:hover {
-  background: #ffcc00;
-  color: black;
-}
-
-/* ✅ Slider Container */
 .slider-container {
-  position: relative;
   display: flex;
-  align-items: center;
-  overflow: hidden;
-  padding: 10px 0;
-}
-
-/* ✅ Auto-Scrolling Product Slider */
-.products-slider {
-  display: flex;
-  gap: 10px;
   overflow-x: auto;
-  scroll-behavior: smooth;
-  scrollbar-width: thin; /* ✅ Show a thin scrollbar */
-  -ms-overflow-style: none;
-  white-space: nowrap; /* ✅ Ensures items stay in a row */
-  padding: 10px;
+  padding: 20px 0;
+  gap: 20px;
+  white-space: nowrap;
 }
 
-.products-slider::-webkit-scrollbar {
-  height: 6px;
-}
-.products-slider::-webkit-scrollbar-thumb {
-  background: rgba(255, 204, 0, 0.8);
-  border-radius: 10px;
-}
-
-/* ✅ Scroll Buttons */
-.scroll-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.6);
-  color: white;
-  border: none;
-  font-size: 2rem;
-  cursor: pointer;
-  padding: 10px;
-  border-radius: 50%;
-  transition: 0.3s ease-in-out;
-}
-
-.scroll-btn:hover {
-  background: rgba(255, 204, 0, 0.8);
-}
-
-.scroll-btn.left {
-  left: 10px;
-}
-
-.scroll-btn.right {
-  right: 10px;
-}
-
-/* ✅ Product Card */
 .product-card {
-  flex: 0 0 calc(33.33% - 10px); /* ✅ Keeps 3 per row */
-  max-width: calc(33.33% - 10px);
+  flex: 0 0 auto;
+  width: 32%;
+  max-width: 300px;
   background: rgba(255, 255, 255, 0.1);
-  padding: 10px;
   border-radius: 10px;
+  padding: 15px;
   text-align: center;
-  transition: 0.3s ease-in-out;
-  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
-  height: auto; /* ✅ Allow content to expand */
-  margin: 0 5px;
-  white-space: normal; /* ✅ Prevents text overflow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(10px);
+  cursor: pointer;
 }
 
-/* ✅ Image Styling */
-.image-container {
-  width: 100%;
-  height: 140px;
-  background: rgba(255, 255, 255, 0.1); /* Match box color */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 10px;
-  overflow: hidden;
+/* 📱 Mobile: Show 2.5 products per row */
+@media (max-width: 768px) {
+  .product-card {
+    width: 45%;
+  }
 }
 
-/* ✅ Product Image */
+.product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+}
+
 .product-image {
   width: 100%;
-  height: 100%;
+  height: 200px;
   object-fit: cover;
-  background: transparent;
   border-radius: 10px;
-  display: block;
 }
 
-/* ✅ Product Info */
-.product-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  margin-top: 5px;
-}
-
-/* ✅ View Details Button */
 .view-details {
-  padding: 6px 10px;
-  background: #ffcc00;
-  font-size: 0.85rem;
-  font-weight: bold;
-  color: black;
-  border-radius: 5px;
+  background: transparent;
+  border: 2px solid white;
+  padding: 8px;
+  margin-top: 10px;
   cursor: pointer;
-  border: none;
-  margin-top: 5px;
+  transition: all 0.3s ease;
 }
 
 .view-details:hover {
   background: white;
-  color: black;
+  color: #1e1e1e;
 }
 
-/* ✅ Responsive Design for All Screens */
-@media (max-width: 1400px) {
-  .product-card {
-    flex: 0 0 calc(16.6% - 10px); /* Show 6 per row on larger tablets */
-    height: 250px;
-  }
-}
-
-@media (max-width: 1024px) {
-  .product-card {
-    flex: 0 0 calc(25% - 10px); /* Show 4 per row on tablets */
-    height: 270px;
-  }
-
-  .product-image {
-    height: 160px;
-  }
-}
-
-@media (max-width: 768px) {
-  .product-card {
-    flex: 0 0 90%; /* ✅ Show one product per row */
-    max-width: 90%;
-    scroll-snap-align: center;
-  }
-
-  .product-image {
-    height: 180px;
-  }
-
-  .scroll-btn {
-    font-size: 1.5rem;
-    padding: 6px;
-  }
-
-  .products-slider {
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory; /* ✅ Makes scrolling feel smoother */
-  }
-}
-
-@media (max-width: 600px) {
-  .product-card {
-    flex: 0 0 calc(33.33% - 10px); /* ✅ Keeps 3 per row even on smaller devices */
-    max-width: calc(33.33% - 10px);
-  }
-
-  .product-image {
-    height: 200px;
-  }
-}
-
-@media (max-width: 480px) {
-  .product-card {
-    flex: 0 0 calc(33.33% - 10px); /* ✅ Keeps 3 per row even on smaller devices */
-    max-width: calc(33.33% - 10px);
-  }
-
-  .product-image {
-    height: 220px;
-  }
-
-  .scroll-btn {
-    font-size: 1.3rem;
-    padding: 5px;
-  }
-}
-/* ✅ Product Modal Styling */
-.product-modal {
+/* 🟢 Modal Box */
+.modal-overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.7);
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 1000;
 }
 
-/* ✅ Modal Content */
 .modal-content {
   background: #222;
   padding: 20px;
   border-radius: 10px;
+  width: 60%;  /* ✅ Set a reasonable width */
+  max-width: 800px;  /* ✅ Ensure it doesn’t get too large */
+  max-height: 90vh;  /* ✅ Prevent overflow on big screens */
   text-align: center;
-  width: 80%;
-  max-width: 500px;
-  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
-  color: white;
   position: relative;
+  overflow: auto; /* ✅ Enable scrolling for large content */
 }
 
-/* ✅ Close Button */
-.close-btn {
-  position: absolute;
-  top: 8px;
-  right: 12px;
-  font-size: 1.8rem; /* Increase size */
-  cursor: pointer;
-  color: white;
-  background: transparent;
-  border: none;
-  padding: 10px; /* Makes it easier to click */
-  transition: 0.3s ease-in-out;
-  border-radius: 50%;
-}
-
-/* ✅ Glow Effect on Hover */
-.close-btn:hover {
-  color: #ffcc00;
-  background: rgba(255, 204, 0, 0.2);
-  box-shadow: 0 0 10px rgba(255, 204, 0, 0.8);
-  transform: scale(1.2);
-}
-
-
-/* ✅ Modal Image */
 .modal-image {
   width: 100%;
-  height: auto;
-  max-height: 300px;
-  object-fit: contain; /* Fix cropping issue */
+  max-height: 400px;  /* ✅ Ensure it’s not too big */
+  object-fit: contain;
   border-radius: 10px;
   margin-bottom: 10px;
-  background: #111; /* Prevents empty space when images have transparency */
 }
 
-/* ✅ Mobile Responsive */
-@media (max-width: 600px) {
-  .modal-content {
-    width: 90%;
-    max-width: 400px;
-  }
+.modal-title {
+  color: #fff;
+}
 
-  .modal-image {
-    max-height: 250px;
-  }
-  .close-btn {
-    font-size: 2rem;
-    padding: 12px;
-  }
+.modal-description {
+  color: #ccc;
+  font-size: 1rem;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #fff;
 }

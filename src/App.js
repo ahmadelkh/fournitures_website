@@ -4,6 +4,7 @@ import Footer from "./components/Footer";
 import "./styles/global.css";
 import ScrollToTop from "./components/ScrollToTop";
 import Products from "./components/Products"; // Product Catalog
+import StatsSection from "./components/StatsSection";
 
 // Lazy Load Components
 const Hero = lazy(() => import("./components/Hero"));
@@ -24,6 +25,7 @@ function App() {
         <ChatAssistant isOpen={isChatOpen} toggleChat={() => setChatOpen(!isChatOpen)} />
         <About />
         <Services />
+        <StatsSection />
         <Infrastructure />
         <Products />
         <Contact />
