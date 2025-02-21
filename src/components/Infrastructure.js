@@ -32,7 +32,7 @@ const Infrastructure = () => {
       name: "Kolwezi",
       img: KolweziImg,
       link: "https://goo.gl/maps/EXAMPLE3",
-      description: "A specialized production plant of 450 m² for custom manufacturing.",
+      description: "A specialized production plant of 2000 m² for custom manufacturing.",
     },
     {
       name: "Likasi",

@@ -1,115 +1,135 @@
 .infrastructure-section {
-    text-align: center;
-    padding: 100px 10%;
-    background: linear-gradient(to right, #ffffff, #beb9b9);
-    color: rgb(0, 0, 0);
-  }
-  
-  /* Section Title */
-  .infra-title {
-    font-size: 3rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-    position: relative;
-    display: inline-block;
-    color: #000000;
-  }
-  
-  /* Underline Animation */
-  .infra-title::after {
-    content: "";
-    width: 100px;
-    height: 4px;
-    background: #000000;
-    position: absolute;
-    left: 50%;
-    bottom: -10px;
-    transform: translateX(-50%);
-    animation: slideIn 1.5s ease-in-out;
-  }
-  
-  .infra-description {
-    font-size: 1.2rem;
-    margin-bottom: 40px;
-  }
-  
-  /* Grid Layout */
-  .infra-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    margin-top: 40px;
-  }
-  
-  /* City Box */
-  .infra-box {
-    position: relative;
-    overflow: hidden;
-    border-radius: 10px;
-    text-decoration: none;
-    transition: 0.3s ease-in-out;
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
-  }
-  
-  /* City Image */
-  .infra-image {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  /* Overlay Content */
-  .infra-content {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 15px;
-    background: rgba(0, 0, 0, 0.5); /* ✅ Reduce opacity for better text visibility */
-    color: white;
-    text-align: center;
-    transition: 0.3s ease-in-out;
-    font-weight: bold;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* ✅ Add text shadow for better visibility */
-  }
-  
-  /* Hover Effects */
-  .infra-box:hover .infra-image {
-    transform: scale(1.1);
-  }
-  
-  .infra-box:hover .infra-content {
-    background: rgba(255, 255, 255, 0.9);
-    color: rgb(0, 0, 0);
-    text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.8); /* ✅ Text glows when hovered */
-  }
+  text-align: center;
+  padding: 80px 10%;
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+}
 
-  .infra-content h3 {
-    font-size: 1.3rem;
-    margin-bottom: 5px;
+/* Section Title */
+.infra-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+  color: #000000;
+}
+
+/* Underline Animation */
+.infra-title::after {
+  content: "";
+  width: 100px;
+  height: 4px;
+  background: #000000;
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
+  animation: slideIn 1.5s ease-in-out;
+}
+
+/* ✅ Grid Layout: Fit Boxes in One Row */
+.infra-grid {
+  display: flex; /* ✅ Use flexbox instead of grid */
+  justify-content: center; /* ✅ Centers all boxes */
+  gap: 20px;
+  margin-top: 40px;
+  flex-wrap: nowrap; /* ✅ Prevents wrapping to multiple rows */
+}
+
+/* ✅ City Box: Smaller Size */
+.infra-box {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 250px; /* ✅ Makes each box smaller */
+  height: 180px; /* ✅ Adjusted height */
+}
+
+/* ✅ Background Overlay: Hidden by Default */
+.infra-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0); /* ✅ Fully transparent by default */
+  z-index: 1;
+  transition: background 0.3s ease-in-out;
+}
+
+/* ✅ City Image: Always Visible */
+.infra-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* ✅ Overlay Content: Hidden By Default */
+.infra-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* ✅ Centers the text */
+  width: 100%;
+  text-align: center;
+  opacity: 0; /* ✅ Hidden by default */
+  transition: opacity 0.3s ease-in-out;
+  z-index: 2;
+}
+
+/* ✅ City Title */
+.infra-content h3 {
+  font-size: 1.4rem;
+  margin-bottom: 5px;
+  color: white;
+  font-weight: bold;
+}
+
+/* ✅ City Description */
+.infra-content p {
+  font-size: 1rem;
+  opacity: 1;
+  color: white;
+  margin: 0 auto;
+}
+
+/* ✅ Hover Effects */
+.infra-box:hover::before {
+  background: rgba(0, 0, 0, 0.6); /* ✅ Dark overlay appears */
+}
+
+.infra-box:hover .infra-content {
+  opacity: 1; /* ✅ Text becomes visible */
+}
+
+.infra-box:hover .infra-image {
+  transform: scale(1.1);
+}
+
+/* ✅ Responsive Design: Allow Wrapping on Small Screens */
+@media (max-width: 1024px) {
+  .infra-grid {
+      flex-wrap: wrap; /* ✅ Allows wrapping if the screen is too small */
+      justify-content: center;
   }
-  
-  /* ✅ City Description */
-  .infra-content p {
-    font-size: 1rem;
-    opacity: 0.9;
+  .infra-box {
+      width: 300px; /* ✅ Adjust size for smaller screens */
+      height: 200px;
   }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .infra-grid {
-      grid-template-columns: 1fr;
-    }
-  }
-  
-  /* Slide-In Animation */
-  @keyframes slideIn {
-    from {
+}
+
+/* ✅ Slide-In Animation */
+@keyframes slideIn {
+  from {
       width: 0;
-    }
-    to {
-      width: 100px;
-    }
   }
-  
+  to {
+      width: 100px;
+  }
+}
