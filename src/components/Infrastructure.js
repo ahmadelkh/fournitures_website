@@ -5,9 +5,9 @@ import "../styles/infrastructure.css";
 
 // Import city images
 import KinshasaImg from "../assets/city.webp";
-import LubumbashiImg from "../assets/city.webp";
-import KolweziImg from "../assets/city.webp";
-import LikasiImg from "../assets/city.webp";
+import LubumbashiImg from "../assets/lub.jpeg";
+import KolweziImg from "../assets/kolwesi.jpeg";
+import LikasiImg from "../assets/likasi.jpeg";
 
 const Infrastructure = () => {
   useEffect(() => {
