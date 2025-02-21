@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/fournitures_website/static/css/main.496a4b48.css",
-    "main.js": "/fournitures_website/static/js/main.f6dc7745.js",
+    "main.js": "/fournitures_website/static/js/main.eda62911.js",
     "static/css/994.76b3c5e6.chunk.css": "/fournitures_website/static/css/994.76b3c5e6.chunk.css",
     "static/js/994.d75946d6.chunk.js": "/fournitures_website/static/js/994.d75946d6.chunk.js",
     "static/css/622.10d06ec5.chunk.css": "/fournitures_website/static/css/622.10d06ec5.chunk.css",
     "static/js/622.e3d1adfb.chunk.js": "/fournitures_website/static/js/622.e3d1adfb.chunk.js",
     "static/css/810.9433ef90.chunk.css": "/fournitures_website/static/css/810.9433ef90.chunk.css",
     "static/js/810.627b8764.chunk.js": "/fournitures_website/static/js/810.627b8764.chunk.js",
-    "static/css/167.aa45c2d8.chunk.css": "/fournitures_website/static/css/167.aa45c2d8.chunk.css",
-    "static/js/167.df44434a.chunk.js": "/fournitures_website/static/js/167.df44434a.chunk.js",
+    "static/css/811.2adc2bb3.chunk.css": "/fournitures_website/static/css/811.2adc2bb3.chunk.css",
+    "static/js/811.b2814cfe.chunk.js": "/fournitures_website/static/js/811.b2814cfe.chunk.js",
     "static/css/296.f4aaa8c9.chunk.css": "/fournitures_website/static/css/296.f4aaa8c9.chunk.css",
     "static/js/296.d477e105.chunk.js": "/fournitures_website/static/js/296.d477e105.chunk.js",
     "static/css/336.a7ef89f8.chunk.css": "/fournitures_website/static/css/336.a7ef89f8.chunk.css",
@@ -17,19 +17,22 @@
     "static/css/351.8a4ef70a.chunk.css": "/fournitures_website/static/css/351.8a4ef70a.chunk.css",
     "static/js/351.38e46251.chunk.js": "/fournitures_website/static/js/351.38e46251.chunk.js",
     "static/media/logo.png": "/fournitures_website/static/media/logo.193ec96194221da9ddef.png",
+    "static/media/likasi.jpeg": "/fournitures_website/static/media/likasi.1715375dae984efa2dc1.jpeg",
     "static/media/city.webp": "/fournitures_website/static/media/city.0eff957c8e3e05cbbe83.webp",
+    "static/media/kolwesi.jpeg": "/fournitures_website/static/media/kolwesi.5b23c0ccfd1a1d97959b.jpeg",
     "static/media/about-bg.jpeg": "/fournitures_website/static/media/about-bg.9b27f92bacf47c592aed.jpeg",
+    "static/media/lub.jpeg": "/fournitures_website/static/media/lub.9b27f92bacf47c592aed.jpeg",
     "index.html": "/fournitures_website/index.html",
     "main.496a4b48.css.map": "/fournitures_website/static/css/main.496a4b48.css.map",
-    "main.f6dc7745.js.map": "/fournitures_website/static/js/main.f6dc7745.js.map",
+    "main.eda62911.js.map": "/fournitures_website/static/js/main.eda62911.js.map",
     "994.76b3c5e6.chunk.css.map": "/fournitures_website/static/css/994.76b3c5e6.chunk.css.map",
     "994.d75946d6.chunk.js.map": "/fournitures_website/static/js/994.d75946d6.chunk.js.map",
     "622.10d06ec5.chunk.css.map": "/fournitures_website/static/css/622.10d06ec5.chunk.css.map",
     "622.e3d1adfb.chunk.js.map": "/fournitures_website/static/js/622.e3d1adfb.chunk.js.map",
     "810.9433ef90.chunk.css.map": "/fournitures_website/static/css/810.9433ef90.chunk.css.map",
     "810.627b8764.chunk.js.map": "/fournitures_website/static/js/810.627b8764.chunk.js.map",
-    "167.aa45c2d8.chunk.css.map": "/fournitures_website/static/css/167.aa45c2d8.chunk.css.map",
-    "167.df44434a.chunk.js.map": "/fournitures_website/static/js/167.df44434a.chunk.js.map",
+    "811.2adc2bb3.chunk.css.map": "/fournitures_website/static/css/811.2adc2bb3.chunk.css.map",
+    "811.b2814cfe.chunk.js.map": "/fournitures_website/static/js/811.b2814cfe.chunk.js.map",
     "296.f4aaa8c9.chunk.css.map": "/fournitures_website/static/css/296.f4aaa8c9.chunk.css.map",
     "296.d477e105.chunk.js.map": "/fournitures_website/static/js/296.d477e105.chunk.js.map",
     "336.a7ef89f8.chunk.css.map": "/fournitures_website/static/css/336.a7ef89f8.chunk.css.map",
@@ -39,6 +42,6 @@
   },
   "entrypoints": [
     "static/css/main.496a4b48.css",
-    "static/js/main.f6dc7745.js"
+    "static/js/main.eda62911.js"
   ]
 }
