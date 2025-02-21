@@ -7,7 +7,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: linear-gradient(to right, #0d0d0d, #222);
+  background: url("../assets/bg.jpg") center/cover no-repeat;
   color: rgb(0, 0, 0);
   overflow: hidden;
   z-index: 1;
@@ -18,7 +18,6 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(255, 255, 255, 0.889); /* Light transparency */
   backdrop-filter: blur(1px); /* Less blur */
   z-index: 0;
 }
@@ -30,7 +29,7 @@
   width: 100%;
   height: 100%;
   pointer-events: none;
-  background: url("../assets/fireflies.png") repeat;
+  background: url("../assets/bg.jpg") repeat;
   opacity: 0.4;
   animation: moveParticles 10s infinite linear alternate;
 }
@@ -39,7 +38,7 @@
 
 @keyframes moveParticles {
   from { transform: translateY(0); opacity: 0.6; }
-  to { transform: translateY(-100px); opacity: 0.3; }
+  to { transform: translateY(-50px); opacity: 0.3; }
 }
 
 /* ✅ Liquid Effect for Hero Title */
@@ -353,7 +352,7 @@
 
 /* ✅ Glowing Logo Effect */
 .hero-logo {
-  width: 180px;  /* ✅ Adjust size */
+  width: 230px;  /* ✅ Adjust size */
   height: auto;
   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.8)); /* ✅ Soft glow */
   transition: transform 0.3s ease-in-out;

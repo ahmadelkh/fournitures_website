@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   padding: 50px 20px;
-  background: linear-gradient(135deg, #f8f8ff, #f2e8ff);
+  background: url("../assets/bg.jpg") center/cover no-repeat;
   text-align: center;
   opacity: 0;
   transform: translateY(50px);

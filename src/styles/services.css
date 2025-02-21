@@ -2,7 +2,7 @@
 .services-section {
   text-align: center;
   padding: 100px 10%;
-  background: #e5e4e4;
+  background: url("../assets/bg.jpg") center/cover no-repeat;
   color: rgb(0, 0, 0);
 }
 

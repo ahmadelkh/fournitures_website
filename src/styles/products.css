@@ -1,7 +1,7 @@
 .products-section {
   text-align: center;
   padding: 50px 20px;
-  background: linear-gradient(135deg, #fff2f2, #dedede);
+  background: url("../assets/bg.jpg") center/cover no-repeat;
   color: rgb(0, 0, 0);
 }
 

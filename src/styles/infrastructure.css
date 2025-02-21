@@ -1,7 +1,7 @@
 .infrastructure-section {
   text-align: center;
   padding: 80px 10%;
-  background: #ffffff;
+  background: url("../assets/bg.jpg") center/cover no-repeat;
   color: rgb(0, 0, 0);
 }
 
