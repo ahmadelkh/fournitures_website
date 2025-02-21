@@ -3,11 +3,11 @@ import "../styles/stats.css";
 
 const statsData = [
   { id: 1, icon: "🏢", label: "Years in Business", target: 14, suffix: "+" },
-  { id: 2, icon: "👥", label: "Team Members", target: 245, suffix: "+" },
+  { id: 2, icon: "👥", label: "Team Members", target: 355, suffix: "+" },
   { id: 3, icon: "🛋️", label: "Furniture Sold", target: 5000, suffix: "+" },
   { id: 4, icon: "🏠", label: "Homes Furnished", target: 690 },
   { id: 5, icon: "🏗️", label: "Projects Completed", target: 10000, suffix: "+" },
-  { id: 6, icon: "😊", label: "Happy Clients", target: 10000, suffix: "+" },
+  { id: 6, icon: "😊", label: "Happy Clients", target: 15380, suffix: "+" },
 ];
 
 const StatsSection = () => {

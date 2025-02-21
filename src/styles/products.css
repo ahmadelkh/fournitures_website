@@ -1,8 +1,8 @@
 .products-section {
   text-align: center;
   padding: 50px 20px;
-  background: linear-gradient(135deg, #1e1e1e, #2c2c2c);
-  color: white;
+  background: linear-gradient(135deg, #fff2f2, #dedede);
+  color: rgb(0, 0, 0);
 }
 
 .products-title {
@@ -19,9 +19,9 @@
 
 .category-btn {
   background: transparent;
-  border: 2px solid #fff;
+  border: 2px solid #000000;
   padding: 10px 15px;
-  color: white;
+  color: rgb(0, 0, 0);
   margin: 5px;
   cursor: pointer;
   font-size: 1rem;
@@ -29,9 +29,9 @@
 }
 
 .category-btn.active {
-  background: #fff;
-  color: #1e1e1e;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  background: #000000;
+  color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
 
 .slider-container {
@@ -46,7 +46,7 @@
   flex: 0 0 auto;
   width: 32%;
   max-width: 300px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.814);
   border-radius: 10px;
   padding: 15px;
   text-align: center;
@@ -64,7 +64,7 @@
 
 .product-card:hover {
   transform: scale(1.05);
-  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.636);
 }
 
 .product-image {
@@ -76,7 +76,7 @@
 
 .view-details {
   background: transparent;
-  border: 2px solid white;
+  border: 2px solid rgb(0, 0, 0);
   padding: 8px;
   margin-top: 10px;
   cursor: pointer;
@@ -84,8 +84,8 @@
 }
 
 .view-details:hover {
-  background: white;
-  color: #1e1e1e;
+  background: rgb(0, 0, 0);
+  color: #ffffff;
 }
 
 /* 🟢 Modal Box */
@@ -95,7 +95,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(255, 255, 255, 0.7);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -103,7 +103,7 @@
 }
 
 .modal-content {
-  background: #222;
+  background: #000000;
   padding: 20px;
   border-radius: 10px;
   width: 60%;  /* ✅ Set a reasonable width */

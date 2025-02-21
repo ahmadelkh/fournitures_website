@@ -1,8 +1,8 @@
 .infrastructure-section {
     text-align: center;
     padding: 100px 10%;
-    background: linear-gradient(to right, #111, #222);
-    color: white;
+    background: linear-gradient(to right, #ffffff, #beb9b9);
+    color: rgb(0, 0, 0);
   }
   
   /* Section Title */
@@ -12,6 +12,7 @@
     margin-bottom: 20px;
     position: relative;
     display: inline-block;
+    color: #000000;
   }
   
   /* Underline Animation */
@@ -19,7 +20,7 @@
     content: "";
     width: 100px;
     height: 4px;
-    background: #ffcc00;
+    background: #000000;
     position: absolute;
     left: 50%;
     bottom: -10px;
@@ -79,8 +80,8 @@
   }
   
   .infra-box:hover .infra-content {
-    background: rgba(255, 204, 0, 0.9);
-    color: black;
+    background: rgba(255, 255, 255, 0.9);
+    color: rgb(0, 0, 0);
     text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.8); /* ✅ Text glows when hovered */
   }
 

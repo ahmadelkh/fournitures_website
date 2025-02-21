@@ -2,8 +2,8 @@
 .services-section {
   text-align: center;
   padding: 100px 10%;
-  background: #111;
-  color: white;
+  background: #e5e4e4;
+  color: rgb(0, 0, 0);
 }
 
 /* ✅ Title */
@@ -20,7 +20,7 @@
   content: "";
   width: 100px;
   height: 4px;
-  background: #ffcc00;
+  background: #000000;
   position: absolute;
   left: 50%;
   bottom: -10px;
@@ -39,7 +39,7 @@
 
 /* ✅ Service Box (Square & Centered) */
 .service-box {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.844);
   border-radius: 10px;
   transition: 0.5s ease-in-out;
   cursor: pointer;
@@ -53,13 +53,13 @@
   align-items: center;
   justify-content: center;
   border: 2px solid transparent;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 10px rgba(255, 250, 250, 0.768);
 }
 
 /* ✅ Glowing Border Effect */
 .service-box:hover {
-  border: 2px solid #ffcc00;
-  box-shadow: 0 0 15px rgba(255, 204, 0, 0.8);
+  border: 2px solid #000000;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
 }
 
 /* ✅ Service Icon */
@@ -89,7 +89,7 @@
   left: 50%;
   transform: translateX(-50%);
   width: 90%;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.867);
   padding: 12px;
   text-align: center;
   transition: opacity 0.5s ease-in-out;

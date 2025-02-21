@@ -76,7 +76,7 @@
   /* Glowing Send Button */
   .send-btn {
     padding: 12px 20px;
-    background: #ffcc00;
+    background: #ffffff;
     border: none;
     font-size: 1.2rem;
     font-weight: bold;
@@ -84,7 +84,7 @@
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s ease-in-out;
-    box-shadow: 0 0 10px rgba(255, 204, 0, 0.8);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
   }
   
   .send-btn:hover {
