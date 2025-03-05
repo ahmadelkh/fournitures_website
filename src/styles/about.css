@@ -3,13 +3,12 @@
 .about-section {
   position: relative;
   padding: 100px 10%;
-  background: url("../assets/bg.jpg") center/cover no-repeat; /* ✅ Replace with your image */
-  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   overflow: hidden;
+  background-color: #ffffff;
 }
 
 /* ✅ Gradient Overlay */
@@ -46,7 +45,7 @@
   font-weight: bold;
   text-transform: uppercase;
   color: #000000;
-  text-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.826);
   margin-bottom: 20px;
 }
 
@@ -75,7 +74,7 @@
   font-weight: bold;
   text-transform: uppercase;
   background: #ffffff;
-  color: black;
+  color: rgb(0, 0, 0);
   border-radius: 8px;
   text-decoration: none;
   transition: 0.3s ease-in-out;
@@ -94,8 +93,8 @@
 }
 
 .about-btn.secondary:hover {
-  background: #000000;
-  color: rgb(255, 255, 255);
+  background: #ffffff;
+  color: rgb(0, 0, 0);
 }
 
 /* ✅ Image Section */

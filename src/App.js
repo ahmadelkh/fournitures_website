@@ -23,8 +23,8 @@ function App() {
       <Suspense fallback={<div className="loading">Loading...</div>}>
         <Hero toggleChat={() => setChatOpen(!isChatOpen)} /> {/* ✅ Pass Function */}
         <ChatAssistant isOpen={isChatOpen} toggleChat={() => setChatOpen(!isChatOpen)} />
-        <About />
         <Services />
+        <About />
         <StatsSection />
         <Infrastructure />
         <Products />

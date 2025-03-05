@@ -2,7 +2,7 @@
 .services-section {
   text-align: center;
   padding: 100px 10%;
-  background: url("../assets/bg.jpg") center/cover no-repeat;
+  background-color: #0e102e;
   color: rgb(0, 0, 0);
 }
 
@@ -13,6 +13,7 @@
   margin-bottom: 30px;
   position: relative;
   display: inline-block;
+  color: #ffffff;
 }
 
 /* ✅ Underline Animation */
@@ -20,7 +21,7 @@
   content: "";
   width: 100px;
   height: 4px;
-  background: #000000;
+  background: #ffffff;
   position: absolute;
   left: 50%;
   bottom: -10px;
@@ -39,7 +40,7 @@
 
 /* ✅ Service Box (Square & Centered) */
 .service-box {
-  background: rgba(255, 255, 255, 0.844);
+  background: rgb(255, 255, 255);
   border-radius: 10px;
   transition: 0.5s ease-in-out;
   cursor: pointer;
@@ -53,13 +54,13 @@
   align-items: center;
   justify-content: center;
   border: 2px solid transparent;
-  box-shadow: 0 0 10px rgba(255, 250, 250, 0.768);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.768);
 }
 
 /* ✅ Glowing Border Effect */
 .service-box:hover {
-  border: 2px solid #000000;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+  border: 2px solid #ffffff;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
 }
 
 /* ✅ Service Icon */

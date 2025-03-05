@@ -3,7 +3,8 @@
   flex-direction: column;
   align-items: center;
   padding: 50px 20px;
-  background: url("../assets/bg.jpg") center/cover no-repeat;
+  background-color: #0e102e;
+  color: rgb(255, 255, 255);
   text-align: center;
   opacity: 0;
   transform: translateY(50px);
@@ -39,29 +40,30 @@
   align-items: center;
   justify-content: center;
   font-size: 40px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.737);
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .stat-icon-box:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 15px rgb(255, 255, 255);
 }
 
 .stat-text {
   text-align: left;
+  color: #ffffff;
 }
 
 .stat-number {
   font-size: 2rem;
   font-weight: bold;
-  color: #000033;
+  color: #ffffff;
   margin-bottom: 5px;
 }
 
 .stat-label {
   font-size: 1rem;
-  color: #555;
+  color: #ffffff;
 }
 
 /* 📱 Mobile: 3 Rows, 2 Columns Each */
@@ -96,13 +98,13 @@
 
   .stat-label {
     font-size: 0.8rem;
-    color: #555;
+    color: #f9f9f9;
   }
 
   .stat-number {
     font-size: 1.2rem;
     font-weight: bold;
-    color: #000033;
+    color: #ffffff;
     margin-bottom: 2px;
   }
 }

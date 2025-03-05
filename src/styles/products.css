@@ -1,7 +1,7 @@
 .products-section {
   text-align: center;
   padding: 50px 20px;
-  background: url("../assets/bg.jpg") center/cover no-repeat;
+  background-color:  #0e102e;
   color: rgb(0, 0, 0);
 }
 
@@ -11,6 +11,7 @@
   margin-bottom: 20px;
   text-transform: uppercase;
   letter-spacing: 2px;
+  color: #fff;
 }
 
 .category-buttons {
@@ -19,9 +20,9 @@
 
 .category-btn {
   background: transparent;
-  border: 2px solid #000000;
+  border: 2px solid #ffffff;
   padding: 10px 15px;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   margin: 5px;
   cursor: pointer;
   font-size: 1rem;
@@ -29,8 +30,8 @@
 }
 
 .category-btn.active {
-  background: #000000;
-  color: #ffffff;
+  background: #ffffff;
+  color: #000000;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
 
@@ -46,7 +47,7 @@
   flex: 0 0 auto;
   width: 32%;
   max-width: 300px;
-  background: rgba(255, 255, 255, 0.814);
+  background: rgba(255, 255, 255, 0.551);
   border-radius: 10px;
   padding: 15px;
   text-align: center;
@@ -84,8 +85,8 @@
 }
 
 .view-details:hover {
-  background: rgb(0, 0, 0);
-  color: #ffffff;
+  background: rgb(255, 255, 255);
+  color: #000000;
 }
 
 /* 🟢 Modal Box */
@@ -103,11 +104,11 @@
 }
 
 .modal-content {
-  background: #000000;
+  background: #0e102e;;
   padding: 20px;
   border-radius: 10px;
   width: 60%;  /* ✅ Set a reasonable width */
-  max-width: 800px;  /* ✅ Ensure it doesn’t get too large */
+  max-width: 600px;  /* ✅ Ensure it doesn’t get too large */
   max-height: 90vh;  /* ✅ Prevent overflow on big screens */
   text-align: center;
   position: relative;
@@ -123,7 +124,7 @@
 }
 
 .modal-title {
-  color: #fff;
+  color: #ffffff;
 }
 
 .modal-description {
