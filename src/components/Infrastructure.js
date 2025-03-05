@@ -25,7 +25,7 @@ const Infrastructure = () => {
     {
       name: "Lubumbashi",
       img: LubumbashiImg,
-      link: "https://goo.gl/maps/EXAMPLE2",
+      link: "https://maps.app.goo.gl/7LX2StnjuF8LSbWUA?g_st=iw",
       description: "One of the largest and most modern furniture showrooms in the DRC.",
     },
     {
